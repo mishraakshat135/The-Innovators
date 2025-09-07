@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+	background-color:#000028;    }
+
+
+
+
+.logo{
+		 position: fixed;
+  top: 10px; 
+  left: 10px;
+  
+	width:200px;
+	height:auto;
+
+
+}
+
+
+
+    .signup-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.7rem;
+      background: #6a11cb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #2575fc;
+    }
+
+    .extra {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .extra a {
+      color: #2575fc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+
+<img class="logo" src="D:\innovate\logo.png">
+
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <form onsubmit="signUpUser(event)" action="connect.php" method="post">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email"  name="email" required  >
+      </div>
+
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Choose a username" name="username" required >
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Re-enter password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter phone number" required>
+      </div>	
+
+      <button type="submit" class="btn">Sign Up</button>
+
+      <div class="extra">
+        <p>Already have an account? <a href="D:\innovate\loginpage.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function signUpUser(event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+      const phone = document.getElementById("phone").value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      // TODO: Send data to your Java backend API
+      console.log("Email:", email);
+      console.log("Username:", username);
+      console.log("Password:", password);
+      console.log("Phone:", phone);
+
+      alert("Sign up attempt sent!");
+    }
+  </script>
+</body>
+</html>

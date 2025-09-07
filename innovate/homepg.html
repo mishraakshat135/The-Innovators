@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Panda</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0d4c;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .logo img {
+      width: 250px;
+      margin-right: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li {
+      cursor: pointer;
+    }
+    nav button {
+       
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-outline {
+width: 200px; /* Sets the width to 200 pixels */
+      height: 50px; /* Sets the height to 50 pixels */
+	text-decoration: none;
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+	color: inherit; 
+	
+    }
+    .btn-primary {
+width: 200px; /* Sets the width to 200 pixels */
+      height: 50px; /* Sets the height to 50 pixels */
+      background: #ff4f81;
+      color: white;
+	text-decoration: none;
+	color: inherit; 
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+    }
+    .hero-text h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      max-width: 400px;
+      margin-bottom: 30px;
+      color: #cfcfcf;
+    }
+    .hero-text .buttons button {
+      margin-right: 15px;
+      padding: 12px 25px;
+      border-radius: 25px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-white {
+width: 200px; height: 50px
+      background: white;
+      color: black;
+    }
+    .btn-dark {
+	padding: 15px 30px;
+	 font-size: 20px;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+    .hero-image img {
+      width: 800px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+    .features {
+      display: flex;
+      gap: 20px;
+      padding: 40px 60px;
+    }
+    .card {
+      flex: 1;
+      padding: 20px;
+      border-radius: 20px;
+      background: #1b1e6a;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+
+
+.ground{
+		
+		width:80%;
+		margin:auto;
+		text-align:center;
+		padding-top:50px;
+		}
+	
+
+	
+
+
+	.rr{
+		
+		margin-top:5%;
+		display:flex;
+		justify-content:space-between;   
+
+				
+	}
+	
+	
+
+
+
+	.cc{
+
+		flex-basis:32%;
+		padding:5px;
+		border-radius:10px;
+		margin-bottom:30px;
+		position:relative;
+		overflow:hidden;
+
+	   
+	}
+
+	.cc img{
+		display:block;
+		width:100%;
+		}
+
+	.cc:hover{
+		background: #191353;
+		opacity:0.6;
+}
+/*	.lal{
+
+	background: transparent;
+		heigth:100%;
+		width:100%;
+		position:absolute;
+		top:0;
+  		left:0;
+		transition :0.5s;   
+
+
+			
+		}
+
+	.lal:hover{
+		background: #191353;
+		opacity:0.6;
+		}	
+
+
+
+
+
+	
+
+	.lal h3{
+		width:100%;
+		font-weight:500;
+		color:#fff;
+		font-size:26px;
+		bottom:0;
+		left:50%;
+		transform:translateX(-50%);
+		position:absolute;
+		opacity:1;
+		transition:0.5s;
+		}
+
+
+	.lal:hover h3{
+		bottom:49%;
+		opacity:1;
+
+		}   */
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      
+    </div>
+    <nav>
+      <ul>
+        <li>Roadmap</li>
+        <li>Review</li>
+        <li>Features</li>
+        <li>Shop</li>
+      </ul>
+    </nav>
+    <div>
+      <button><a style="text-decoration: none" class="btn-outline" href="D:\innovate\loginpage.html">Sign In</a></button>
+      <button><a style="text-decoration: none" class="btn-primary" href="D:\innovate\signup.html">Create Account</a></button>
+    </div>
+  </header>
+
+
+
+
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome for Learning App!</h1>
+      <p>We aim to create an affordable and accessible learning platform that connects students and teachers.</p>
+          </div>
+    <div class="hero-image">
+      <img src="D:\innovate\mascot.png" alt="Mascot">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="card">Feature 1</div>
+    <div class="card">Feature 2</div>
+    <div class="card">Feature 3</div>
+  </section>
+
+
+<section class="ground">
+	<h1>Courses we have</h1>
+	<div class="rr">
+		<div class="cc">
+		<img src="D:\innovate\maths.jpg"
+			class="iage"> 
+		<div class="lal">
+			<h3 class="text">Mathematics</h3>
+		</div>
+		</div>
+
+
+		<div class="cc">
+		<img src="D:\innovate\Science.jpg"
+			class="iage"> 
+		<div class="lal">
+			<h3 class="text">Science</h3>
+		</div>
+		</div>
+
+
+		<div class="cc">
+		<img src="D:\innovate\ai.jpg"
+			class="iage">
+		<div class="lal">
+
+			<h3 class="text">Generative AI</h3>
+		</div>
+		</div> 
+
+		<form action="D:\innovate\qui.py" method="post">
+	
+	</div>
+
+
+
+</body>
+</html>
